@@ -1,0 +1,11 @@
+__pycache__/
+*.egg-info/
+.idea/
+.hypothesis
+.mypy_cache
+*.swp
+pip.log
+*~
+/venv
+/dist/
+/build/
