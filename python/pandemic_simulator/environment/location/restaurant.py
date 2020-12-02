@@ -4,10 +4,15 @@ from typing import Optional
 
 import numpy as np
 
-from .base_business import AgeRestrictedBusinessBaseLocation
+from .base_business import AgeRestrictedBusinessBaseLocation, NonEssentialBusinessBaseLocation
 from ..interfaces import Registry, LocationID, NonEssentialBusinessLocationState
 
-__all__ = ['Bar']
+__all__ = ['Bar', 'Restaurant']
+
+
+class Restaurant(NonEssentialBusinessBaseLocation):
+    """Implements a restaurant location."""
+    pass
 
 
 class Bar(AgeRestrictedBusinessBaseLocation):

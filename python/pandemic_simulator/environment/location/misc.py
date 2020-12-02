@@ -2,13 +2,8 @@
 
 from .base_business import NonEssentialBusinessBaseLocation
 
-__all__ = ['BarberShop', 'Restaurant']
+__all__ = ['BarberShop']
 
 
 class BarberShop(NonEssentialBusinessBaseLocation):
     """Implements a barber shop."""
-
-
-class Restaurant(NonEssentialBusinessBaseLocation):
-    """Implements a restaurant location."""
-    pass

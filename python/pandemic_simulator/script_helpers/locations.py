@@ -16,7 +16,7 @@ def add_bars_restaurants(all_locations: List[Location],
                          population_params: PopulationParams,
                          registry: CityRegistry,
                          numpy_rng: Optional[np.random.RandomState] = None,
-                         road_id: Optional[LocationID] = None):
+                         road_id: Optional[LocationID] = None) -> List[Location]:
     location_type_to_params = population_params.location_type_to_params
     assert Bar in location_type_to_params
     assert Restaurant in location_type_to_params

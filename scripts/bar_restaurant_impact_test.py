@@ -8,7 +8,7 @@ from pandemic_simulator.script_helpers import EvaluationOpts, experiment_main, m
     medium_town_population_params
 
 
-def eval_government_strategies(experiment_name: str, opts: EvaluationOpts):
+def eval_government_strategies(experiment_name: str, opts: EvaluationOpts) -> None:
     data_saver = H5DataSaver(experiment_name, path=opts.data_saver_path)
     experiment_main(sim_opts=PandemicSimOpts(),
                     sim_non_cli_opts=PandemicSimNonCLIOpts(medium_town_population_params),
